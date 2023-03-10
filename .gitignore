@@ -133,3 +133,5 @@ dmypy.json
 
 config/settings/local.py
 postgres_data
+
+.DS_Store
