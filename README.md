@@ -9,8 +9,10 @@
 
 1. Пункты с 1 по 5 реализованы в файле Terminal_output
 2. Пункт 6 реализован в директории UML_class_diagram (файл с расширением .png добавлен для удобства ознакомления)
-3. Проект реализован на Pythone 3.11 (более подробно о связях в файлах pyproject.toml или requirements.txt)
-   - `poetry install` или `pip install -r requirements.txt`
+3. Проект реализован на Pythone 3.11 (более подробно о связях в файлах pyproject.toml или requirements.txt):
+   - `poetry install` или `pip install -r requirements.txt` - установить зависимости;
+   - `sudo apt install mysql-server mysql-client` - установить MySQL Server;
+   - 
 
 ### Задание
 
