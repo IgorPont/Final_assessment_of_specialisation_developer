@@ -46,26 +46,23 @@ def create_connection_db(name_db):
         print(e)
 
 
-def create_database_Human_friends():
-    """Создать базу данных Human_friends"""
-    try:
-        with connect(
-                host="localhost",
-                user=input("User name MySQL server: "),
-                password=getpass("Password: "),
-        ) as connection:
-            create_db_query = "CREATE DATABASE Human_friends"
-            with connection.cursor() as cursor:
-                cursor.execute(create_db_query)
-    except Error as e:
-        print(e)
-
-
-def create_table(query):
+def modify_datatable(query):
     """Создать таблицу"""
     with connection.cursor() as cursor:
         cursor.execute(query)
         connection.commit()
 
 
+def drop_table(query):
+    """Удалить таблицу"""
+    with connection.cursor() as cursor:
+        cursor.execute(query)
 
+
+def select_table(query):
+    """Чтение записей таблицы"""
+    with connection.cursor() as cursor:
+        cursor.execute(query)
+        result = cursor.fetchall()
+        for row in result:
+            print(row)

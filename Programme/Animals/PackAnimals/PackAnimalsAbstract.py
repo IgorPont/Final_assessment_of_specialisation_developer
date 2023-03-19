@@ -1,10 +1,10 @@
 from abc import abstractmethod
 
-from Programme.AnimalsAbstract import Animals
+from Programme.Animals.AnimalsAbstract import Animals
 
 
-class DomesticAnimalsAbstract(Animals):
-    """Абстрактный класс Домашние животные"""
+class PackAnimalsAbstract(Animals):
+    """Абстрактный класс Вьючные животные"""
 
     @abstractmethod
     def eat(self):
